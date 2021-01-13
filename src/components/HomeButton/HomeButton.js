@@ -26,7 +26,7 @@ function HomeButton({ onClick, ...props }) {
         }
       `}
     >
-      <img src={logo} width={4.5 * GU} alt="" />
+      // <img src={logo} width={4.5 * GU} alt="" />
     </ButtonBase>
   )
 }

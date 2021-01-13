@@ -13,6 +13,9 @@ import { staticApps } from './static-apps'
 import { isAddress, isValidEnsName } from './web3-utils'
 import { addStartingSlash } from './utils'
 
+// dOrg fork
+import { openOrg } from './dao/utils'
+
 export const ARAGONID_ENS_DOMAIN = 'aragonid.eth'
 
 // The locator represents the current route.
@@ -319,4 +322,9 @@ RoutingProvider.propTypes = { children: PropTypes.node }
 
 export function useRouting() {
   return useContext(RoutingContext)
+}
+
+// dorg Fork
+export function forceOpenOrg() {
+  openOrg()
 }

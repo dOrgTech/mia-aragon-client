@@ -76,6 +76,7 @@ function Onboarding({ selectorNetworks, web3 }) {
 
   const goToOrg = useCallback(
     orgAddress => {
+      console.log('in Onboarding orgAddress', orgAddress);
       routing.update(locator => ({
         ...locator,
         mode: { name: 'org', orgAddress },

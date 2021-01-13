@@ -13,23 +13,23 @@ import imgCreateNewVote from './assets/create-new-vote.png'
 const EAGLE_DIMENSIONS = [1241, 833]
 
 const ACTIONS = [
-  {
-    label: 'Assign Tokens',
-    appId: appIds['TokenManager'],
-    img: imgAssignTokens,
-  },
+  // {
+  //   label: 'Assign Tokens',
+  //   appId: appIds['TokenManager'],
+  //   img: imgAssignTokens,
+  // },
   {
     label: 'Vote',
     appId: appIds['Voting'],
     img: imgCreateNewVote,
   },
+  // {
+  //   label: 'Check Finance',
+  //   appId: appIds['Finance'],
+  //   img: imgCheckFinance,
+  // },
   {
-    label: 'Check Finance',
-    appId: appIds['Finance'],
-    img: imgCheckFinance,
-  },
-  {
-    label: 'New Payment',
+    label: 'New Community Grant',
     appId: appIds['Finance'],
     img: imgNewPayment,
   },
@@ -81,6 +81,15 @@ function Home({ apps, onOpenApp }) {
           padding: ${6 * GU}px 0;
         `}
       >
+        <h1
+          css={`
+            margin-bottom: ${6 * GU}px;
+            ${textStyle('title2')}
+            text-align: center;
+          `}
+        >
+          Welcome MIA DAO
+        </h1>
         <h1
           css={`
             margin-bottom: ${6 * GU}px;

@@ -423,7 +423,7 @@ const OptInDialogue = React.memo(({ onClose, onOptIn, optedIn, ...styles }) => {
                   <Link href="https://www.helpscout.com/" target="_blank">
                     HelpScout
                   </Link>
-                  . If you opt-in, we will load their program onto Aragon.
+                  . If you opt-in, we will load their program onto MIA DAO.
                   HelpScout is a{' '}
                   <Link
                     target="_blank"

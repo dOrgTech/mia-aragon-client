@@ -6,7 +6,7 @@ import { EthereumAddressType, ClientThemeType } from './prop-types'
 import { useWallet } from './wallet'
 import { network, web3Providers } from './environment'
 import { useClientTheme } from './client-theme'
-import { useRouting } from './routing'
+import { useRouting, forceOpenOrg } from './routing'
 import initWrapper, { pollConnectivity } from './aragonjs-wrapper'
 import { Onboarding } from './onboarding'
 import { getWeb3 } from './web3-utils'
@@ -86,6 +86,8 @@ class App extends React.Component {
     pollConnectivity([web3Providers.default], connected => {
       this.setState({ connected })
     })
+    // force default routing to the MIA-DAO
+    forceOpenOrg()
   }
 
   componentDidUpdate(prevProps, prevState) {
