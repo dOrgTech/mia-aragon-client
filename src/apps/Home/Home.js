@@ -5,8 +5,8 @@ import { AppType } from '../../prop-types'
 import appIds from '../../known-app-ids'
 
 import imgEagle from '../../assets/eagle.svg'
-import imgAssignTokens from './assets/assign-tokens.png'
-import imgCheckFinance from './assets/check-finance.png'
+// import imgAssignTokens from './assets/assign-tokens.png'
+// import imgCheckFinance from './assets/check-finance.png'
 import imgNewPayment from './assets/new-payment.png'
 import imgCreateNewVote from './assets/create-new-vote.png'
 
